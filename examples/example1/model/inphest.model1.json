@@ -1,0 +1,58 @@
+{
+    "model_id": "Model1",
+    "host_to_symbiont_time_scale_factor": 1.0,
+    "diversification": {
+        "mean_symbiont_lineage_birth_rate": 0.03,
+        "lineage_birth_rate": {
+            "definition_type": "lambda_definition",
+            "definition": "lambda **kwargs: 1.00",
+            "description": "fixed: 1.00"
+        },
+        "mean_symbiont_lineage_death_rate": 0.0,
+        "lineage_death_rate": {
+            "definition_type": "lambda_definition",
+            "definition": "lambda **kwargs: 1.00",
+            "description": "fixed: 1.00"
+        }
+    },
+    "anagenetic_host_assemblage_evolution": {
+        "mean_symbiont_lineage_host_gain_rate": 0.03,
+        "symbiont_lineage_host_gain_weight": {
+            "definition_type": "lambda_definition",
+            "definition": "lambda **kwargs: 1.00",
+            "description": "fixed: 1.00"
+        },
+        "mean_symbiont_lineage_host_loss_rate": 0.0,
+        "symbiont_lineage_host_loss_weight": {
+            "definition_type": "lambda_definition",
+            "definition": "lambda **kwargs: 1.0",
+            "description": "fixed: 1.0"
+        }
+    },
+    "cladogenetic_host_assemblage_evolution": {
+        "sympatric_subset_speciation_weight": 1.0,
+        "single_host_vicariance_speciation_weight": 1.0,
+        "widespread_vicariance_speciation_weight": 1.0,
+        "founder_event_speciation_weight": 0.0
+    },
+    "anagenetic_geographical_range_evolution": {
+        "mean_symbiont_lineage_area_gain_rate": 0.03,
+        "symbiont_lineage_area_gain_weight": {
+            "definition_type": "lambda_definition",
+            "definition": "lambda **kwargs: 1.00",
+            "description": "fixed: 1.00"
+        },
+        "mean_symbiont_lineage_area_loss_rate": 0.0,
+        "symbiont_lineage_area_loss_weight": {
+            "definition_type": "lambda_definition",
+            "definition": "lambda **kwargs: 1.0",
+            "description": "fixed: 1.0"
+        }
+    },
+    "cladogenetic_geographical_range_evolution": {
+        "sympatric_subset_speciation_weight": 1.0,
+        "single_area_vicariance_speciation_weight": 1.0,
+        "widespread_vicariance_speciation_weight": 1.0,
+        "founder_event_speciation_weight": 0.0
+    }
+}
